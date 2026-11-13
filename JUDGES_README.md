@@ -25,23 +25,42 @@ LokSutra is a living knowledge universe for India's craft, farming and community
 | Persistent source-audio library | No | Short-form flow stores reviewed text, not source audio |
 | Public submissions, multiuser moderation | No | One owner only |
 
-## 2-minute walkthrough for a reviewer
 
-**00:00–00:20 / Problem:** Traditional skills often survive as voices, not indexed documents. Explain who is being preserved, and what may be lost.
+## 🌟 Key Features & Innovations
 
-**00:20–00:40 / First look:** Open the homepage. The new India heritage illustration is AI-generated **concept artwork**, not a real field recording or a portrait of an actual contributor.
+### 1. Multilingual Heritage Preservation with Gnani AI
+LokSutra integrates Gnani AI speech-to-text to help preserve oral traditions in regional languages, including Punjabi and Hindi. Contributors' recordings can be converted into editable transcripts, helping transform spoken knowledge into searchable digital heritage.
 
-**00:40–01:10 / Discovery:** Search the archive; try Craft or Farming. Open a chapter. Show provenance (illustrative vs owner contribution). Click a learning step and identify its exact source sentence.
+### 2. Human-in-the-Loop Transcription
+Traditional names, local expressions and cultural terminology must be preserved accurately. LokSutra lets the authenticated owner review and correct transcripts before saving them as permanent knowledge records.
 
-**01:10–01:30 / Connections:** Open the knowledge constellation and inspect the reason for a relationship (shared category/tags). Emphasize transparency over unsupported AI claims.
+### 3. Interactive Knowledge Universe
+Instead of presenting stories as isolated documents, LokSutra visualizes related traditions as an interactive constellation. Connections are explained using shared categories, themes and tags rather than unsupported historical assumptions.
 
-**01:30–02:00 / Creation:** Explain and, when safe, demonstrate owner login and reviewed story save. If a real Gnani recording has been verified on your own machine, show the transcription; otherwise explain that the external provider integration is implemented but unverified live. Never call a mocked transcript a live result.
+### 4. Source Lens — Traceable Knowledge
+Readers can explore structured learning steps and identify the corresponding sentences in a saved transcript. This creates a transparent link between the original documented knowledge and its educational presentation.
 
-## Why this engineering direction
+### 5. Recoverable Long-Audio Transcription
+LokSutra includes a separate owner-controlled workflow for longer recordings using Gnani Batch transcription. It supports job-status tracking, duplicate-request safeguards, restart recovery and manual transcript import.
 
-The most important product decision is **human-in-the-loop preservation**. Automatic transcription can contain mistakes, especially with regional names and domain-specific terms. LokSutra therefore treats the transcript as a draft until its human editor saves it. Source Lens also avoids pretending a generated lesson is authoritative: every displayed step is backed by the saved transcript sentence.
+*Live Batch processing remains subject to verified account access, pricing and successful provider testing.*
 
-A second deliberate choice is an **explainable, not mystical, constellation**. Relationship labels are based on saved metadata rather than a black-box cultural inference. A relationship is an invitation to explore, not evidence of influence, lineage, or common origin.
+### 6. Searchable Digital Heritage Archive
+A searchable archive helps visitors explore preserved knowledge by categories, languages, regions and relevant themes. Each story can retain contributor attribution and descriptive metadata.
+
+### 7. Cinematic Heritage Experience
+LokSutra combines culturally inspired visuals, a responsive interface, animated transitions, and interactive storytelling to make traditional knowledge appealing to younger generations.
+
+### 8. Privacy-Conscious, Owner-Reviewed Publishing
+The prototype uses authenticated owner access for editing, with public read-only exploration. API credentials remain on the backend, and transcripts require human approval before publication.
+
+---
+
+## What Makes LokSutra Different?
+
+**LokSutra does not merely convert speech into text. It creates a pathway from spoken memories to discoverable, explainable and human-reviewed cultural knowledge.**
+
+Its innovation lies in combining multilingual transcription, editorial review, source traceability and interactive cultural exploration in one preservation workflow.
 
 ## Technical outline
 
