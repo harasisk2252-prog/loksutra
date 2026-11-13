@@ -1,0 +1,102 @@
+/* LokSutra Heritage Landing / first-screen visual upgrade.
+   Additive styles only: no app/Batch authentication or payment code is changed. */
+:root{--gold:#f2c47c;--teal:#78dccf;--cream:#f6f0e7}
+body{
+ background:
+   radial-gradient(ellipse 49% 31% at 84% 14%,rgba(33,75,103,.46),transparent 85%),
+   radial-gradient(ellipse 43% 31% at 8% 17%,rgba(83,47,76,.18),transparent 82%),
+   linear-gradient(180deg,#070e1f 0%,#0b1423 44%,#08121b 100%);
+}
+nav{border-bottom:1px solid #d7b87a25;background:#09111fd9;padding-block:17px}
+.brand-glyph{color:#f3c278;text-shadow:0 0 21px #e8b26c75}
+nav .pill{border-color:#547e7994;background:#13322c;color:#a1f3e5}
+nav .right>.primary{font-size:12px;white-space:nowrap}
+.heritage-hero{min-height:635px;grid-template-columns:minmax(0,1.03fr) minmax(0,.97fr);gap:clamp(0px,2.8vw,45px);padding:30px 0 18px}
+.heritage-hero::before{content:"";position:absolute;top:42px;left:0;width:120px;height:1px;background:linear-gradient(90deg,#dcb77391,transparent)}
+.heritage-copy{padding-top:20px}
+.heritage-copy .hero-kicker{gap:13px}
+.heritage-copy .hero-kicker .eyebrow{font:800 11px/1.5 "Segoe UI",sans-serif;letter-spacing:3.8px;text-transform:uppercase;color:#8ce8d6}
+.heritage-copy .kicker-line{width:21px;background:#82dfcb}
+.heritage-copy h1{font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:clamp(62px,6.25vw,102px);line-height:1.04;letter-spacing:-.06em;max-width:700px;color:#fbf3e9;margin:32px 0 24px}
+.heritage-copy h1 em{color:#f6c473;font-style:italic;white-space:nowrap}
+.heritage-copy .hero-desc{max-width:590px;color:#a9bad3;font-size:clamp(14px,1.24vw,18px);line-height:1.91;margin-top:22px}
+.heritage-copy .hero-actions{gap:12px;margin-top:31px}
+.heritage-copy .hero-actions button{min-height:62px;font-size:14px;border-radius:12px;padding:15px 22px}
+.heritage-copy .hero-actions .primary{background:linear-gradient(115deg,#ffdf99,#e0ab5c);border:1px solid #f8d99f70;color:#17243b;box-shadow:0 9px 33px #dda7502a}
+.heritage-copy .hero-actions .secondary{border:1px solid #68bdb88d;background:#0c2837b5;color:#d5f3ed}
+.heritage-copy .hero-actions button span{font-size:17px;margin-left:8px}
+.heritage-note{color:#92bcbf;margin-top:35px;font-size:11px;letter-spacing:.03em}
+.heritage-note .sound-bars i{background:#eec581}
+/* Image-led illustration: asset derives from the author's previously generated LokSutra concept,
+   not a purported portrait of a real oral-history contributor. */
+.heritage-universe{height:590px;overflow:visible;min-width:0;isolation:isolate}
+.heritage-universe::before,.heritage-universe::after{content:none}
+.heritage-halo{position:absolute;inset:9% 7%;border-radius:50%;background:radial-gradient(circle,#c6986b19 0%,#34558025 35%,transparent 72%);filter:blur(30px)}
+.heritage-art{width:min(94%,560px);height:100%;max-height:560px;object-fit:contain;filter:drop-shadow(0 6px 21px #f3b45726) drop-shadow(0 18px 53px #1a62865c);z-index:2;position:relative;animation:heritage-rise 7s ease-in-out infinite alternate}
+.heritage-orbit{position:absolute;border:1px solid #e8c77d35;border-radius:50%;pointer-events:none}
+.heritage-orbit-one{height:78%;width:94%;transform:rotate(-24deg);border-style:dashed;animation:heritage-orbit-one 30s linear infinite}
+.heritage-orbit-two{height:67%;width:85%;border-color:#67c7c53d;transform:rotate(36deg);animation:heritage-orbit-two 36s linear infinite}
+.heritage-spark{position:absolute;z-index:4;color:#f9d190;font-size:22px;text-shadow:0 0 22px #ffc975a3;animation:heritage-spark 4s ease-in-out infinite alternate}
+.spark-one{left:7%;top:16%}.spark-two{right:4%;top:26%;font-size:32px;color:#97e8e4;animation-delay:-1.4s}.spark-three{right:18%;bottom:15%;font-size:16px;animation-delay:-2.8s}
+.heritage-floating{position:absolute;z-index:5;display:flex;gap:10px;align-items:center;padding:13px 15px;border:1px solid #c59c626e;background:linear-gradient(120deg,#0b2232f0,#15243ae8);border-radius:10px;box-shadow:0 13px 34px #0309148f;backdrop-filter:blur(12px)}
+.heritage-floating-one{left:1%;top:13%;transform:rotate(-5deg)}
+.heritage-floating-two{right:-2%;bottom:18%;transform:rotate(3deg)}
+.heritage-floating-icon{font:30px Georgia,serif;color:#f4c782;line-height:1}
+.heritage-floating strong{display:block;color:#f6d79f;font:800 10px/1.4 "Segoe UI",sans-serif;letter-spacing:1.6px}
+.heritage-floating small{display:block;margin-top:3px;color:#b1c7d1;font-size:10px}
+.heritage-art-caption{position:absolute;z-index:4;bottom:8px;left:50%;transform:translateX(-50%);white-space:nowrap;letter-spacing:2px;font-size:9px;color:#b0baba}
+.heritage-art-caption span{color:#dfba77;margin-left:8px}
+@keyframes heritage-rise{to{transform:translateY(-9px)}}
+@keyframes heritage-orbit-one{to{transform:rotate(336deg)}}
+@keyframes heritage-orbit-two{to{transform:rotate(-324deg)}}
+@keyframes heritage-spark{to{transform:translateY(-10px);opacity:.56}}
+/* Existing live archive counts and all downstream panels retain their behavior. */
+.editorial-divider{margin-top:4px;color:#a3acb1}
+.stats{margin-bottom:75px}
+.stat b{color:#f0ca8d}
+@media(max-width:1210px){
+ .heritage-hero{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);min-height:560px}
+ .heritage-copy h1{font-size:clamp(53px,6.5vw,84px)}
+ .heritage-universe{height:475px}
+ .heritage-floating strong{font-size:9px}
+ .heritage-floating small{font-size:9px}
+}
+@media(max-width:860px){
+ .heritage-hero{grid-template-columns:1fr;min-height:0;gap:0;padding-top:58px}
+ .heritage-copy{padding-top:0}
+ .heritage-copy h1{font-size:clamp(57px,9.7vw,82px)}
+ .heritage-copy .hero-desc{font-size:16px}
+ .heritage-universe{height:490px;width:min(95%,600px);justify-self:center}
+ .heritage-art{max-height:460px;width:95%}
+}
+@media(max-width:600px){
+ .heritage-hero{padding-top:42px}
+ .heritage-copy .hero-kicker .eyebrow{font-size:9px;letter-spacing:2px}
+ .heritage-copy h1{font-size:clamp(46px,11.5vw,68px);margin:22px 0 17px;max-width:100%;line-height:1.075}
+ .heritage-copy .hero-desc{font-size:13px;line-height:1.78;margin:0}
+ .heritage-copy .hero-actions{grid-template-columns:1fr 1fr;margin-top:25px;gap:9px}
+ .heritage-copy .hero-actions button{font-size:11px;min-height:62px;line-height:1.45;padding:11px 7px}
+ .heritage-copy .hero-actions button span{margin-left:3px;font-size:13px}
+ .heritage-note{margin-top:23px;font-size:10px}
+ .heritage-universe{height:340px;width:100%;max-width:100%;margin-top:2px;overflow:hidden}
+ .heritage-art{height:100%;max-height:330px;width:min(90%,370px)}
+ .heritage-orbit-one{height:65%;width:84%}
+ .heritage-orbit-two{height:65%;width:78%}
+ .heritage-floating{padding:7px 8px;gap:5px}
+ .heritage-floating-icon{font-size:17px}
+ .heritage-floating strong{font-size:7px;letter-spacing:.6px}
+ .heritage-floating small{font-size:7px;line-height:1.25;margin-top:2px}
+ .heritage-floating-one{top:13%;left:0}
+ .heritage-floating-two{right:0;bottom:19%}
+ .heritage-art-caption{font-size:7px;letter-spacing:.8px;bottom:6px}
+ .stats{margin-bottom:55px}
+}
+@media(max-width:350px){
+ .heritage-copy h1{font-size:43px}
+ .heritage-copy .hero-actions button{font-size:10px}
+ .heritage-universe{height:310px}
+ .heritage-floating-one{top:10%}
+}
+@media(prefers-reduced-motion:reduce){
+ .heritage-art,.heritage-orbit,.heritage-spark{animation:none!important}
+}
