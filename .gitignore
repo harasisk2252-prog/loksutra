@@ -21,3 +21,4 @@ submission/
 
 .mypy_cache/
 .ruff_cache/
+.netlify/

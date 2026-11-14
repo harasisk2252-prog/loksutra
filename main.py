@@ -275,7 +275,7 @@ def create_app(db_path=None, owner_hash=None, gnani_key=None, gnani_transport=No
         yield
 
     app = FastAPI(title="LokSutra", lifespan=lifespan)
-    app.state.db = Path(db_path) if db_path else BASE / "loksutra.db"
+    app.state.db = Path(db_path or os.getenv("LOKSUTRA_DB_PATH") or BASE / "loksutra.db")
     app.state.owner_hash = os.getenv("OWNER_PASSWORD_HASH", "") if owner_hash is None else owner_hash
     app.state.owner_version = hashlib.sha256(app.state.owner_hash.encode()).hexdigest()
     app.state.gnani_key = os.getenv("GNANI_API_KEY", "") if gnani_key is None else gnani_key
