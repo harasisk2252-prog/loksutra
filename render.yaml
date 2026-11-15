@@ -2,19 +2,13 @@ services:
   - type: web
     name: loksutra-api
     runtime: docker
-    plan: 0.5c-512mb
+    plan: free
     region: singapore
     dockerfilePath: ./Dockerfile
     healthCheckPath: /api/health
-    disk:
-      name: loksutra-data
-      mountPath: /var/data
-      sizeGB: 1
     envVars:
       - key: APP_ENV
         value: production
-      - key: LOKSUTRA_DB_PATH
-        value: /var/data/loksutra.db
       - key: FFPROBE_PATH
         value: /usr/bin/ffprobe
       - key: GNANI_BATCH_ENABLED
