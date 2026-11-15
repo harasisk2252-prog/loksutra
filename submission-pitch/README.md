@@ -1,32 +1,40 @@
-# LokSutra — One-page project pitch
+# LokSutra
+## Every Voice Holds a Universe
 
-**[Open the live demo](https://loksutra.netlify.app)** · **[View the GitHub project](https://github.com/harasisk2252-prog/loksutra)**
+**An AI-assisted, human-reviewed prototype preserving India's oral heritage, traditional knowledge, and regional voices.**
 
-**Creator:** Harasis Kaur · **Entry:** Solo
+**[Open the live Netlify site](https://loksutra.netlify.app)** · **[Explore the GitHub repository](https://github.com/harasisk2252-prog/loksutra)**
 
-## The idea
+**Creator:** Harasis Kaur · **Entry:** Solo · **Built for:** Great Indian AI Internship Challenge — Gnani AI
 
-Traditional knowledge is often passed down by speaking. A recording can preserve a voice, but it is difficult to search, credit, correct, or connect with other stories. **LokSutra helps preserve community knowledge in people's own words and makes reviewed stories easier to explore.**
+## The problem — When a voice disappears, knowledge can disappear
+
+Across India, knowledge about farming, handicrafts, music, food, and local traditions is often passed down orally. Many stories remain undocumented, especially in regional languages. When knowledge holders can no longer share their experiences, valuable cultural context may be lost.
+
+## Our solution — Turn spoken memories into living knowledge
+
+LokSutra helps turn consented oral recordings into searchable, attributed cultural stories. Transcription is a starting draft, not the final outcome: a person reviews the words and adds the contributor and story context before preservation.
 
 ## How it works
 
-**Capture → Review → Preserve → Discover**
+1. **Capture:** Add a consented short recording (up to 30 seconds).
+2. **Transcribe:** Optionally use Gnani speech-to-text, including Punjabi, when configured and approved.
+3. **Review:** Correct the transcript before saving; AI output is not treated as unquestionable truth.
+4. **Preserve:** Save the story with contributor, region, language, category, and tags.
+5. **Explore:** Browse and search the archive, follow source-linked reading steps, and discover stories connected by shared metadata.
 
-An owner can add a consented short recording, optionally use Gnani speech-to-text when configured, then review and edit the transcript before saving it with contributor, region, language, category, and tags. Visitors can search and filter the public archive.
+## What makes LokSutra different
 
-## What makes LokSutra useful
+- **Voice-first:** Makes it easier to contribute knowledge shared through speech.
+- **Human review:** Keeps people responsible for transcript corrections and context.
+- **Source Lens:** Highlights the saved transcript sentence behind a reading step.
+- **Knowledge Constellation:** Shows explicit metadata connections without claiming historical influence or semantic AI discovery.
+- **Attribution:** Keeps a story connected to its contributor and place.
 
-- **Source Lens** highlights the exact saved transcript sentence behind a reading step.
-- **Knowledge Constellation** connects stories through visible shared metadata, such as category or region. It does not claim historical influence or semantic AI discovery.
-- **Human review and attribution** keep contributors and their context central; AI assists with a draft, while the owner reviews the words.
-- **Short audio workflow** accepts recordings up to 30 seconds. The source audio is not permanently stored; the reviewed transcript and story details are.
+## Prototype status and future vision
 
-## Reviewer access and honest scope
+The public archive is available without an owner password; the capture studio is owner-only. Archive examples are illustrative, not independently verified field recordings. Source audio is not permanently stored. The long-audio Batch workflow is implemented but remains disabled pending live provider verification. LokSutra's future vision is a multilingual, community-led archive that keeps cultural knowledge discoverable and accessible to future generations.
 
-The live Netlify site opens to a public archive without an owner password. The capture studio is owner-only, so use the separately submitted demo video to see that flow. Archive samples are illustrative and are not independently verified field recordings. The separate long-audio Batch workflow remains disabled pending live provider verification.
+> **LokSutra doesn't just convert speech into text. It helps turn fleeting voices into lasting heritage.**
 
-## Technology
-
-HTML, CSS, and JavaScript · Python/FastAPI · SQLite · optional Gnani speech-to-text.
-
-**More detail:** [Judge notes](../JUDGES_README.md) · [Demo storyboard](../DEMO_STORYBOARD.md) · [Technical reference](../TECHNICAL_REFERENCE.md) · [Verification](../VERIFICATION.md)
+**Technology:** HTML CSS JAVASCRIPT· Python/FastAPI · SQLite · Gnani speech-to-text
