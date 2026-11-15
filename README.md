@@ -1,6 +1,6 @@
 # LokSutra — India's Living Knowledge Universe
 
-**Live demo:** [loksutra.netlify.app](https://loksutra.netlify.app) · **Creator:** Harasis Kaur, solo
+**For judges:** [Open the one-page project pitch](submission-pitch/) · **Live demo:** [loksutra.netlify.app](https://loksutra.netlify.app) · **Creator:** Harasis Kaur, solo
 
 > LokSutra helps preserve traditional knowledge in the words of the people who hold it. It turns short, consented voice stories into reviewed, attributed, searchable chapters that readers can explore and trace back to their saved source sentences.
 
